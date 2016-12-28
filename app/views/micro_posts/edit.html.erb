@@ -1,0 +1,15 @@
+<h1>Editing Post</h1>
+
+<%= form_tag :user_micro_post, method: 'PUT' do |a| %>
+
+  <div class="field">
+    <%= label_tag :content %>
+    <%= text_field_tag :content %>
+
+  </div>
+  <div class="actions">
+    <%= submit_tag %>
+  </div>
+<% end %>
+
+<%= link_to 'Back', user_micro_posts_path(@user) %>

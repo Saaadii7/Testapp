@@ -64,6 +64,6 @@ test:
 #
 production:
   <<: *default
-  database: 
-  username: Test
-  password: <%= ENV['TEST_DATABASE_PASSWORD'] %>
+  database: saaad_db
+  username: saaad
+  password: root

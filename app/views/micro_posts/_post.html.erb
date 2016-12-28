@@ -1,0 +1,14 @@
+
+<%= form_tag :user_micro_posts, method: 'POST' do |a| %>
+
+ 
+
+  <div class="field">
+    <%= label_tag :content %>
+    <%= text_field_tag :content %>
+
+  </div>
+  <div class="actions">
+    <%= submit_tag %>
+  </div>
+<% end %>
