@@ -1,5 +1,5 @@
 class MicroPostsController < ApplicationController
-	before_filter :get_user , :get_post, only: [:new,:index,:show, :edit, :update, :destroy]
+	before_filter :get_user , :get_post, only: [:new,:index,:show, :edit, :update, :destroy, :create]
   def index
   	@posts = @user.micro_posts
   end
